@@ -15,6 +15,8 @@
 		07B9B0E61E30BCDE00A79A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B9B0E41E30BCDE00A79A4C /* LaunchScreen.storyboard */; };
 		07B9B0F11E30BCDE00A79A4C /* CustomPieViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B0F01E30BCDE00A79A4C /* CustomPieViewTests.m */; };
 		07B9B0FC1E30BCDE00A79A4C /* CustomPieViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B0FB1E30BCDE00A79A4C /* CustomPieViewUITests.m */; };
+		07B9B10E1E30BD0000A79A4C /* CustomPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B10B1E30BD0000A79A4C /* CustomPieView.m */; };
+		07B9B10F1E30BD0000A79A4C /* CustomShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9B10D1E30BD0000A79A4C /* CustomShapeLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		07B9B0F71E30BCDE00A79A4C /* CustomPieViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPieViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B9B0FB1E30BCDE00A79A4C /* CustomPieViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPieViewUITests.m; sourceTree = "<group>"; };
 		07B9B0FD1E30BCDE00A79A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B9B10A1E30BD0000A79A4C /* CustomPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPieView.h; sourceTree = "<group>"; };
+		07B9B10B1E30BD0000A79A4C /* CustomPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPieView.m; sourceTree = "<group>"; };
+		07B9B10C1E30BD0000A79A4C /* CustomShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomShapeLayer.h; sourceTree = "<group>"; };
+		07B9B10D1E30BD0000A79A4C /* CustomShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomShapeLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		07B9B0D51E30BCDE00A79A4C /* CustomPieView */ = {
 			isa = PBXGroup;
 			children = (
+				07B9B1091E30BD0000A79A4C /* PieView */,
 				07B9B0D91E30BCDE00A79A4C /* AppDelegate.h */,
 				07B9B0DA1E30BCDE00A79A4C /* AppDelegate.m */,
 				07B9B0DC1E30BCDE00A79A4C /* ViewController.h */,
@@ -138,6 +145,17 @@
 				07B9B0FD1E30BCDE00A79A4C /* Info.plist */,
 			);
 			path = CustomPieViewUITests;
+			sourceTree = "<group>";
+		};
+		07B9B1091E30BD0000A79A4C /* PieView */ = {
+			isa = PBXGroup;
+			children = (
+				07B9B10A1E30BD0000A79A4C /* CustomPieView.h */,
+				07B9B10B1E30BD0000A79A4C /* CustomPieView.m */,
+				07B9B10C1E30BD0000A79A4C /* CustomShapeLayer.h */,
+				07B9B10D1E30BD0000A79A4C /* CustomShapeLayer.m */,
+			);
+			path = PieView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +296,8 @@
 			files = (
 				07B9B0DE1E30BCDE00A79A4C /* ViewController.m in Sources */,
 				07B9B0DB1E30BCDE00A79A4C /* AppDelegate.m in Sources */,
+				07B9B10F1E30BD0000A79A4C /* CustomShapeLayer.m in Sources */,
+				07B9B10E1E30BD0000A79A4C /* CustomPieView.m in Sources */,
 				07B9B0D81E30BCDE00A79A4C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TRF6DSXKA;
 				INFOPLIST_FILE = CustomPieView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WQL.CustomPieView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3TRF6DSXKA;
 				INFOPLIST_FILE = CustomPieView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WQL.CustomPieView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
