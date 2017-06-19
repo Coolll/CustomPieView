@@ -743,6 +743,22 @@ typedef void(^ClickBlock)(NSInteger clickIndex);
     _coverCircleLayer.strokeEnd = 1;
 }
 
+- (void)setSelectedIndex:(NSInteger)selectedIndex
+{
+    _selectedIndex = selectedIndex;
+    
+    if (!self.canClick) {
+        return;
+    }
+    
+    if (selectedIndex < pieShapeLayerArray.count) {
+
+        CustomShapeLayer *layer = pieShapeLayerArray[selectedIndex];
+        layer.isSelected = YES;
+        
+        [self dealClickCircleWithIndex:selectedIndex];
+    }
+}
 
 #pragma mark - 点击事件
 

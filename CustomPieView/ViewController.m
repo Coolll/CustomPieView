@@ -132,6 +132,9 @@
     //添加到视图上
     [chartView showCustomViewInSuperView:self.view];
     
+    //设置默认选中的index，如不需要该属性，可注释
+    //[chartView setSelectedIndex:2];
+    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

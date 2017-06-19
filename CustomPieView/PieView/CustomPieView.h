@@ -138,6 +138,12 @@ typedef NS_ENUM(NSInteger ,PieCenterType) {
  **/
 @property (nonatomic,assign) CGFloat clickOffsetSpace;
 
+/**
+ *  选中的index，不设置的话，没有选中的模块
+ **/
+@property (nonatomic,assign) NSInteger selectedIndex;
+
+
 //添加视图
 - (void)showCustomViewInSuperView:(UIView*)superView;
 
